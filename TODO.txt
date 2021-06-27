@@ -1,0 +1,4 @@
+TODO
+1. add tests
+2. add configuration files for navigation itd
+3. worker.js (execute pipe in worker)

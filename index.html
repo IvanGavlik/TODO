@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<title>Basic 63</title>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="styles/layout.css" type="text/css">
+</head>
+<body>
+<script src="https://cdn.jsdelivr.net/npm/ramda@latest/dist/ramda.min.js">
+</script><script type="text/javascript" src="scripts/db.js"></script>
+<script type="text/javascript" src="scripts/index.js"> </script>
+<header>
+  <div id="hgroup">
+    <h1><a href="#">Simple TODO</a></h1>
+    <h2>Example how to do FP in JavaScript</h2>
+  </div>
+  <div class="clear"></div>
+</header>
+<!-- content -->
+<div id="container">s
+  <div id="content">
+    <script>
+      displayItems();
+    </script>
+  </div>
+
+  <aside>
+    <section>
+      <h2> Add new </h2>
+      <input id="name" type="text" name="name" placeholder="Name">
+      <input id="desc" type="desc" name="desc" placeholder="Description">
+      <select id="priority" name="priority">
+        <script> displayPriority() </script>
+      </select>
+      <br>
+      <button onclick="addItem(document.getElementById('name').value,
+        document.getElementById('desc').value,
+        document.getElementById('priority').value)" >
+
+        Save
+      </button>
+      <button onclick="clearInputs([document.getElementById('name'),document.getElementById('desc'),  document.getElementById('priority')])">
+        Clean
+      </button>
+    </section>
+  </aside>
+  <!-- / content body -->
+  <div class="clear"></div>
+</div>
+<!-- footer -->
+<footer>
+  <p class="fl_left">Copyright &copy; 2021 - All Rights Reserved - <a href="#">Ivan Gavlik</a></p>
+  <p class="fl_right">Template by <a target="_blank" href="https://www.os-templates.com/" title="Free Website Templates">OS Templates</a></p>
+  <div class="clear"></div>
+</footer>
+</body>
+</html>
